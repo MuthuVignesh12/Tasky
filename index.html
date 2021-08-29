@@ -63,7 +63,11 @@
             <!-- taskDescription -->
             <div class="mb-3">
               <label for="taskDescription" class="form-label">Task Type</label>
-              <textarea id="taskDescription" class="form-control" rows="3" ></textarea>
+              <textarea
+                id="taskDescription"
+                class="form-control"
+                rows="3"
+              ></textarea>
             </div>
           </div>
           <div class="modal-footer">
@@ -74,7 +78,13 @@
             >
               Close
             </button>
-            <button type="button" class="btn btn-primary">Save changes</button>
+            <button
+              type="button"
+              class="btn btn-primary"
+              onclick="addNewCard()"
+            >
+              Save changes
+            </button>
           </div>
         </div>
       </div>
@@ -135,35 +145,6 @@
 
       <!--task container-->
       <section class="task_container row">
-        <div class="col-md-6 col-lg-4">
-          <!--cards-->
-          <div class="card my-4">
-            <div class="card-header align-self-end">
-              <button class="btn btn-outline-info">
-                <i class="fal fa-pencil"></i>
-              </button>
-              <button class="btn btn-outline-warning">
-                <i class="fal fa-trash-alt"></i>
-              </button>
-            </div>
-            <div class="card-body">
-              <img
-                src="https://www.umbrellaconsultants.com/files/resources/outer-banks-web-development-hosting.jpg"
-                alt="image"
-                class="card-img"
-              />
-              <h5 class="card-title mt-3">Task Title</h5>
-              <p class="card-text">
-                With supporting text below as a natural lead-in to additional
-                content.
-              </p>
-              <span class="badge bg-primary">New</span>
-            </div>
-            <div class="card-footer">
-              <button class="btn btn-outline-primary">Open Task</button>
-            </div>
-          </div>
-        </div>
       </section>
     </main>
 
